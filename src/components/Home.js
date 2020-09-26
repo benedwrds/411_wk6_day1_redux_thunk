@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, CardContent, CardActions, Divider } from '@material-ui/core'
 import { Link } from 'react-router-dom'
-import cars from '../cars.json' // remove this
+
 
 const Home = (props) => {
     return (
@@ -10,7 +10,7 @@ const Home = (props) => {
             {props.cars.map((car, idx) => (
                 <Card key={idx} className="card">
                     <CardContent className="text-gray">
-                        <span>{car.name.toUpperCase()}</span>
+                        {/* <span>{car.name.toUpperCase()}</span> */}
                         <ul>
                         <li>Miles per Gallon: {car["mpg"]}</li>
                         <li>Cylinders: {car["cylinders"]}</li>
